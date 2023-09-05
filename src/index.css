@@ -1,13 +1,286 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.app-holder{
+  overflow-y: hidden;
+}
+
+.holder{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right top,#65dfc9,#6cdbed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.glass{
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem );
+  display: flex;
+}
+
+
+.circle-1,
+.circle-2{
+  background: white;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(255,255,255,.8),
+    rgba(255,255,255,0.3));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-1{
+  top: 5%;
+  left: 70%;
+}
+
+
+
+.circle-2{
+  top: 65%;
+  left: 12%;
+}
+
+.dashboard{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(255,255,255,.8),
+    rgba(255,255,255,0.3));
+    border-radius: 2rem;
+}
+
+.self{
+  top: 4rem;
+  position: fixed;
+}
+
+
+.links{
+  position: fixed;
+}
+
+.link{
+  display: flex;
+  /* position: absolute; */
+  margin: .5rem 0rem;
+  padding: .5rem 5rem;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+
+.link1{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+  padding: .5rem 5rem;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.link1.close{
+  display:none;
+}
+
+
+.y{
+  display: none;
+}
+
+.iconing{
+  padding-top:1rem ;
+  padding-right:.5rem;
+  font-size: 2rem;
+}
+
+.show-item{
+  flex: 2;
+}
+
+
+.download{
+  background: linear-gradient(to right top,#65dfc9,#6cdbed);
+  border-radius: 1rem;
+  color: white;
+}
+.open{
+  background: linear-gradient(to right top,#65dfc9,#6cdbed);
+  border-radius: 1rem;
+  color: white;
+  height: 7rem;
+  width: 95%;
+  position: relative;
+  top: 18rem;
+  margin: 0rem auto;
+  transition: .2s ease-in-out;
+}
+
+.download .link{
+  display: flex;
+  flex-direction: column;
+  padding: .1rem 6rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.link a{
+  /* text-decoration: none; */
+  color: black;
+  font-size: 1.5rem;
+}
+
+.ab{
+  padding-top: .5rem;
+  margin-right: .5rem;
+}
+
+.x{
+  position: relative;
+  left: 83%;
+  top:-1rem;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 420px){
+  .holder{
+    height: 95vh;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .glass{
+    display: flex;
+    flex-direction: column-reverse;
+    border-top-right-radius: 2rem;
+    border-top-left-radius:  2rem; 
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 5rem;
+  }
+
+  .self{
+    display: none;
+  }
+  
+  .user,
+  .download,
+  .n{
+    display: none;
+  }
+
+  .dashboard{
+    position: fixed;
+    bottom: 1rem;
+    height: 2.5rem;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .x{
+    display: block;
+    position: absolute;
+    left: 95%;
+    top: 1rem;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .y{
+    display: block;
+  }
+
+  .open{
+    position: fixed;
+    top: 35rem;
+    background: linear-gradient(to right top,#65dfc9,#6cdbed);
+    border-radius: 1rem;
+    color: white;
+    height: 12rem;
+    width: 95%;
+    margin: 0 auto;
+    transition: .2s ease-in-out;
+  }
+
+
+  .links{
+    display: flex;
+  }
+
+  .link1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+
+  .link1 h2{
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+
+
+  .link{
+    margin: 0rem .9rem;
+    padding: 0rem .2rem;
+    position: relative;
+    bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in ;
+    border: 0.1rem solid transparent;
+  }
+
+  .link:hover{
+    border: 0.1rem solid black;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .iconing{
+    padding-top:.3rem ;
+    padding-right:0rem;
+    font-size: 2rem;
+  }
+
+  .glass{
+    width: 90%;
+    height: 100vh;
+  }
+
+  .circle-1,
+  .circle-2{
+    display: none;
+}
 }

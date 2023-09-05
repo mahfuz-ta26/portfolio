@@ -1,0 +1,43 @@
+.tech-holder{
+    padding-left: 3rem;
+    padding-top: 5rem;
+}
+
+.hori1{
+    width: 60%;
+    height: 1rem;
+    background-color:white;
+    border-radius: 1rem;
+}
+
+.data-holder{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.data-holder img{
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem .3rem;
+    border: teal solid .2rem;
+    border-radius: 50%;
+    transition: .1s ease-in ;
+}
+
+.data-holder img:hover{
+    margin: .4rem .1rem;
+
+}
+
+@media screen and (max-width:420px) {
+    .tech-holder{
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+
+    .data-holder img{
+        width: 5rem;
+        height: 5rem;
+    }
+}

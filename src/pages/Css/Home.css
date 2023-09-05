@@ -1,0 +1,107 @@
+.home-holder{
+    padding-left: 3rem;
+    padding-top: 5rem;
+}
+
+
+.info h1{
+    font-size: 35px;
+}
+
+.info .hori{
+    width: 40%;
+    height: 1rem;
+    background-color:white;
+    border-radius: 1rem;
+}
+
+.ex-holder{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8rem;
+}
+
+.ex-holder img{
+    border-bottom-right-radius: 50%;
+    border-bottom: teal solid .5rem;
+    width: 15rem;
+    height: 15rem;
+
+}
+
+.ex-holder .title{
+    padding-top: 1.5rem;
+    padding-left: .5rem;
+}
+
+.title h5{
+    font-size: 1rem;
+}
+
+.title h3{
+    font-size: 2rem;
+}
+.title h3 span{
+    font-size: 2rem;
+    color: rgb(11, 199, 199);
+}
+
+.title p{
+    padding-top: 1.5rem;
+    font-size: 1rem;
+}
+
+
+.icon-bttn{
+    padding-top: 2rem;
+    display: flex;
+}
+
+.icon-bttn .res{
+    padding: .4rem 2rem;
+    border-radius: .3rem;
+    outline: none;
+    background-color: teal;
+    border: none;
+    color: white;
+}
+
+.link-group{
+    margin-left: 5rem;
+    display: flex;
+}
+
+.link-group .linkd{
+    padding: .4rem .4rem;
+    border-radius: .3rem;
+    outline: none;
+    background-color: teal;
+    border: none;
+    color: white;
+    margin-left: .3rem;
+}
+
+@media screen and (max-width: 420px){
+    .home-holder{
+        padding-left: 1rem;
+
+    }
+    .info{
+        padding-top: .2rem;
+        margin-top: -1rem;
+    }
+    .info h1{
+        font-size: 35px;
+        padding-top: 0;
+    }
+
+    .info  .hori{
+        width: 80%;
+    }
+
+    .ex-holder{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+}

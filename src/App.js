@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/dashboard/Home";
+import Contact from "./pages/dashboard/Contact";
+import Projects from "./pages/dashboard/Projects";
+import Techknowledgy from "./pages/dashboard/Techknowledgy";
+import About from "./pages/dashboard/About";
+import DashBoard from "./pages/dashboard/DashBoard";
+import { useState } from "react";
+
 
 function App() {
+  const [isOpen,setIsOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-holder">
+      <Routes>
+        <Route path="" element={<DashBoard isOpen={isOpen} setIsOpen={setIsOpen}/>}>
+          <Route index  element={<Home isOpen={isOpen} setIsOpen={setIsOpen}/>}/>
+          <Route path="about" element={<About/>}/>
+          <Route path="contact" element={<Contact/>}/>
+          <Route path="projects" element={<Projects/>}/>
+          <Route path="techknowledgy" element={<Techknowledgy/>}/>
+          <Route path="techknowledgy" element={<Techknowledgy/>}/>
+        </Route> 
+      </Routes>
     </div>
   );
 }
