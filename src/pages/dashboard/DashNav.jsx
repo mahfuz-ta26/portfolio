@@ -40,7 +40,10 @@ const DashNav = ({ isOpen , setIsOpen }) => {
                     <Link className='link'
                         to="/techknowledgy"><h2><FaBookOpen className='iconing'/><span className='n'>Experience</span></h2>
                     </Link>
-
+                    
+                    {/* <Link className='link'
+                        to="/admin"><h2><FaBookOpen className='iconing'/><span className='n'>Admin Access</span></h2>
+                    </Link> */}
 
                 </div>
 
@@ -65,19 +68,3 @@ const DashNav = ({ isOpen , setIsOpen }) => {
 }
 
 export default DashNav
-
-
-
-// let content = 
-// <>
-//   <div className="holder">
-//     <div className="glass">
-//         <DashNav></DashNav>
-//         <div>
-//           <outlet/>
-//         </div>
-//     </div>
-//   </div>
-//     <div className="circle-1"></div>
-//     <div className="circle-2"></div>
-// </>;

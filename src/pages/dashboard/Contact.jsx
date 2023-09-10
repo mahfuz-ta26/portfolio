@@ -1,9 +1,113 @@
-import React from 'react'
+import React, { useState } from 'react';
+import '../Css/Contact.css';
 
-const Contact = () => {
+function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+  const [formStatus, setFormStatus] = useState({
+    submitted: false,
+    error: null,
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData)
+    // Implement the email sending logic here using a library or API
+
+    fetch('http://localhost:3001/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setFormStatus({ submitted: true, error: null });
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
+        } else {
+          throw new Error('Failed to submit the form');
+        }
+      })
+      .catch((error) => {
+        setFormStatus({ submitted: true, error: error.message });
+      });
+
+  };
+  // console.log(formStatus)
   return (
-    <div>Contact</div>
-  )
+    <div >
+      <div className='info pro'>
+            <h1>Contact...</h1>
+            <div className="hori"></div>
+      </div>
+      
+    <div className="feedback-form">
+      <form onSubmit={handleSubmit}>
+        <div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <textarea
+            type="text"
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+      </div>
+
+    </div>
+  );
 }
 
-export default Contact
+export default ContactForm;

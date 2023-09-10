@@ -6,6 +6,7 @@ import Techknowledgy from "./pages/dashboard/Techknowledgy";
 import About from "./pages/dashboard/About";
 import DashBoard from "./pages/dashboard/DashBoard";
 import { useState } from "react";
+import AdminPanel from "./pages/dashboard/AdminPanel";
 
 
 function App() {
@@ -20,10 +21,12 @@ function App() {
           <Route path="projects" element={<Projects/>}/>
           <Route path="techknowledgy" element={<Techknowledgy/>}/>
           <Route path="techknowledgy" element={<Techknowledgy/>}/>
+          {/* <Route path="admin" element={<AdminPanel/>}/> */}
         </Route> 
       </Routes>
     </div>
   );
 }
+
 
 export default App;

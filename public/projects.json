@@ -1,0 +1,47 @@
+[
+  {
+    "_id"         : "1",
+    "live"        : "https://spectrum-login.web.app/",
+    "web_name"    : "Spectrum CC",
+    "about"       : "A website that was built to maintain a coaching center functional. It facilitates sharing blogs in the blog section, addressing student's questions and providing answers online, selling courses online, and publishing student marks, making it a comprehensive platform.",
+    "tech_front"  : "Html , css , react js , firebase , jwt , redux",
+    "tech_back"  : "Node js , express js , mongoDB",
+    "git_front"   : "https://github.com/mat557/spec-cc",
+    "git_server"  : "https://github.com/mat557/spc-cc-server",
+    "opinion1"    : "Authentication is implemented,user can login , create account ,view their profile and role etc.",
+    "opinion2"    : "The admin can upload online courses and videos, as well as edit and delete them",
+    "opinion3"    : "Users can enroll in courses, watch course videos, participate in online exams, and view their results on the website",
+    "opinion4"    : "The website has a section for writing blogs. Users can read blogs, and both admins and blog writers can add, edit, and delete them.",
+    "opinion5"    : "Visite feed section if you have any question,ask them,find answer from the comment section."
+  },
+  {
+    "_id"       : "2",
+    "live"      : "https://spectrum-login.web.app/",
+    "web_name"  : "Spectrum CC",
+    "about"       : "A website that was built to maintain a coaching center functional. It facilitates sharing blogs in the blog section, addressing student's questions and providing answers online, selling courses online, and publishing student marks, making it a comprehensive platform.",
+    "tech_front"  : "Html , css , react js , firebase , jwt",
+    "tech_back"  : "Node js , express js , mongoDB",
+    "git_front" : "https://github.com/mat557/spec-cc",
+    "git_server": "https://github.com/mat557/spc-cc-server",
+    "opinion1"  :"2hell hell hell hell hell hell ehll hell hell hell",
+    "opinion2"  :"2hell hell hell hell hell hell ehll hell hell hell",
+    "opinion3"  :"2hell hell hell hell hell hell ehll hell hell hell",
+    "opinion4"  :"2hell hell hell hell hell hell ehll hell hell hell",
+    "opinion5"  :"2hell hell hell hell hell hell ehll hell hell hell"
+  },
+  {
+    "_id"       : "3",
+    "live"      : "https://spectrum-login.web.app/",
+    "web_name"  : "Spectrum CC",
+    "about"       : "A website that was built to maintain a coaching center functional. It facilitates sharing blogs in the blog section, addressing student's questions and providing answers online, selling courses online, and publishing student marks, making it a comprehensive platform.",
+    "tech_front"  : "Html , css , react js , firebase , jwt",
+    "tech_back"  : "Node js , express js , mongoDB",
+    "git_front" : "https://github.com/mat557/spec-cc",
+    "git_server": "https://github.com/mat557/spc-cc-server",
+    "opinion1"  :"3hell hell hell hell hell hell ehll hell hell hell",
+    "opinion2"  :"3hell hell hell hell hell hell ehll hell hell hell",
+    "opinion3"  :"3hell hell hell hell hell hell ehll hell hell hell",
+    "opinion4"  :"3hell hell hell hell hell hell ehll hell hell hell",
+    "opinion5"  :"3hell hell hell hell hell hell ehll hell hell hell"
+  }
+]

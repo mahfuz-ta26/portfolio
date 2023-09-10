@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .home-holder{
     padding-left: 3rem;
     padding-top: 5rem;
@@ -84,12 +91,17 @@
 @media screen and (max-width: 420px){
     .home-holder{
         padding-left: 1rem;
-
+        padding-top: 1rem;
     }
     .info{
-        padding-top: .2rem;
-        margin-top: -1rem;
+        /* margin-top: -1rem; */
     }
+
+    .title{
+        text-align: justify;
+        padding-right: .3rem;
+    }
+
     .info h1{
         font-size: 35px;
         padding-top: 0;
