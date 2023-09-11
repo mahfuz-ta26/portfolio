@@ -2,7 +2,7 @@
     display: block;
     position: absolute;
     z-index: 5;
-    background-color: rgb(107, 108, 108);
+    background-color: rgb(79, 154, 154);
     width: 100%;
     height: 100%;
     top: 0;
@@ -32,18 +32,16 @@
     width: 90%;
     margin: 1.5rem auto;
     padding: 1rem 2rem;
-    background-color: rgb(149, 145, 145);
+    background: linear-gradient(to left top,#42a391,#6cdbed);
     animation-name: mymove;
     animation-duration: 2s;
 }
 
 @keyframes mymove {
     0%{
-        /* width: 0; */
         opacity: 0;
     }
     100%{
-        /* width: 100%; */
         opacity: 1;
     }
 }
@@ -72,7 +70,7 @@
         display: block;
         position: absolute;
         z-index: 5;
-        background-color: rgb(107, 108, 108);
+        background-color: rgb(79, 154, 154);
         width: 100%;
         height: 100%;
         top: 0;
@@ -88,8 +86,8 @@
     .modal{
         width: 95%;
         margin: 2rem auto 1rem;
-        background-color: rgb(149, 145, 145);
-        padding: 5px;
+        background: linear-gradient(to left top,#42a391,#6cdbed);
+        padding: 5px 5px 9px;
         border-radius: 5px;
     }
 

@@ -6,8 +6,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { useState } from 'react';
 
 const DashNav = ({ isOpen , setIsOpen }) => {
-
-    
+ 
     let content =
         <>
             <div className='dashboard'>
