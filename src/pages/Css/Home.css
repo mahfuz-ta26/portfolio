@@ -4,28 +4,16 @@ body {
     box-sizing: border-box;
 }
 
-
 .home-holder{
-    padding-left: 3rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 
-
-.info h1{
-    font-size: 35px;
-}
-
-.info .hori{
-    width: 40%;
-    height: 1rem;
-    background-color:white;
-    border-radius: 1rem;
-}
 
 .ex-holder{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 8rem;
+    padding-top: 12rem;
 }
 
 .ex-holder img{
@@ -56,6 +44,7 @@ body {
 .title p{
     padding-top: 1.5rem;
     font-size: 1rem;
+    color: black;
 }
 
 
@@ -90,11 +79,8 @@ body {
 
 @media screen and (max-width: 420px){
     .home-holder{
-        padding-left: 1rem;
         padding-top: 1rem;
-    }
-    .info{
-        /* margin-top: -1rem; */
+        padding-left: 1rem;
     }
 
     .title{
@@ -103,17 +89,13 @@ body {
     }
 
     .info h1{
-        font-size: 35px;
-        padding-top: 0;
+        font-size: 30px;
     }
 
-    .info  .hori{
-        width: 80%;
-    }
 
     .ex-holder{
         display: flex;
         flex-direction: column;
-        padding-top: 1rem;
+        padding-top: 4rem;
     }
 }

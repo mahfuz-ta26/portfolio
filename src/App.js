@@ -7,6 +7,7 @@ import About from "./pages/dashboard/About";
 import DashBoard from "./pages/dashboard/DashBoard";
 import { useState } from "react";
 import AdminPanel from "./pages/dashboard/AdminPanel";
+import Experience from "./pages/dashboard/Experience";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="contact" element={<Contact/>}/>
           <Route path="projects" element={<Projects/>}/>
           <Route path="techknowledgy" element={<Techknowledgy/>}/>
-          <Route path="techknowledgy" element={<Techknowledgy/>}/>
+          {/* <Route path="experience" element={<Experience/>}/> */}
           {/* <Route path="admin" element={<AdminPanel/>}/> */}
         </Route> 
       </Routes>

@@ -2,23 +2,57 @@
     display: block;
     position: absolute;
     z-index: 5;
-    background-color: rgb(64, 198, 198);
-    width: 45rem;
-    height: 50vh;
+    background-color: rgb(107, 108, 108);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     padding: 4rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items:start;
     justify-content: center;
+    animation-name: mymovee;
+    animation-duration: 1s;
 }
+
+@keyframes mymovee {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.modal{
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 1rem 2rem;
+    background-color: rgb(149, 145, 145);
+    animation-name: mymove;
+    animation-duration: 2s;
+}
+
+@keyframes mymove {
+    0%{
+        /* width: 0; */
+        opacity: 0;
+    }
+    100%{
+        /* width: 100%; */
+        opacity: 1;
+    }
+}
+
 
 .text{
     font-size: 22px;
+    color: white;
 }
-
 .show-nothing{
     display: none;
 }
@@ -35,13 +69,32 @@
 
 @media screen and (max-width:420px){
     .show-details{
-        width: 95%;
-        height: auto;
-        margin-left: .5rem;
-        padding: 1rem;
-
+        display: block;
+        position: absolute;
+        z-index: 5;
+        background-color: rgb(107, 108, 108);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: .1rem;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: center;
     }
+
+    .modal{
+        width: 95%;
+        margin: 2rem auto 1rem;
+        background-color: rgb(149, 145, 145);
+        padding: 5px;
+        border-radius: 5px;
+    }
+
     .text{
         font-size: 20px;
+        color: white;
     }
 }

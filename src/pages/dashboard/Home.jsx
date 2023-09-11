@@ -1,6 +1,9 @@
 import '../Css/Home.css'
 import propic from '../../img/proPic1.png';
-import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillLinkedin , AiOutlineGithub } from "react-icons/ai";
+import { Link } from 'react-router-dom';
+
+
 
 const Home = ({ setIsOpen , isOpen }) => {
   return (
@@ -8,7 +11,6 @@ const Home = ({ setIsOpen , isOpen }) => {
       
       <div className='info'>
         <h1>About me...</h1>
-        <div className="hori"></div>
       </div>
       
       <div className='ex-holder'>
@@ -24,9 +26,9 @@ const Home = ({ setIsOpen , isOpen }) => {
               <div className='icon-bttn'>
                   <button className='res' onClick={()=>setIsOpen(!isOpen)}>Resume</button>
                   <div className="link-group">
-                    <button className='linkd'><AiFillLinkedin/></button>
-                    <button className='linkd'><AiFillLinkedin/></button>
-                    <button className='linkd'><AiFillLinkedin/></button>
+                    <Link className='linkd' to={`https://www.linkedin.com/in/md-mahfuz-anam-tasnim-535a17282/`}><AiFillLinkedin/></Link>
+                    {/* <Link className='linkd' to={`https://github.com/mahfuz-ta26`}><AiOutlineGithub/></Link> */}
+                    <Link className='linkd' to={`https://github.com/mat557`}><AiOutlineGithub/></Link>
                   </div>
               </div>
           </div>

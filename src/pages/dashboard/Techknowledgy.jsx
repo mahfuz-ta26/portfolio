@@ -1,40 +1,67 @@
+import React from 'react';
 import '../Css/Techknowledgy.css';
-import { AiFillHtml5 ,  } from "react-icons/ai";
-import logo from '../../img/logo.jpg';
-import logo1 from '../../img/logocss.jpg';
-import logo2 from '../../img/logojs.jpg';
-import logo3 from '../../img/logoexp.jpg';
-import logo4 from '../../img/logomongo.jpg';
-import logo5 from '../../img/logogit.jpg';
-import logo6 from '../../img/logofire.jpg';
-import logo7 from '../../img/logofigma.jpg';
-import logo8 from '../../img/logocpp.jpg';
+import { FaReact, FaNode, FaDatabase, FaGithub, FaLaptopCode, FaRocket } from 'react-icons/fa';
 
 
 const Techknowledgy = () => {
   return (
-    <div className='tech-holder'>
-      
-      <div className='info'>
-        <h1>Familiar technologies...</h1>
-        <div className="hori1"></div>
+    <div className="tech-holder">
+      <div className="infoTech">
+        <h1>Familiar Technologies...</h1>
+        {/* <div className="hori1"></div> */}
       </div>
 
-      <div className='data-holder'>
-        <img src={logo} alt="" />
-        <img src={logo1} alt="" />
-        <img src={logo2} alt="" />
-        <img src={logo3} alt="" />
-        <img src={logo4} alt="" />
-        <img src={logo5} alt="" />
-        <img src={logo6} alt="" />
-        <img src={logo7} alt="" />
-        <img src={logo8} alt="" />
+      <div className="skills-list">
+        <div className="tech-card">
+          <div className="icon-container">
+            <FaReact className="tech-icon" />
+          </div>
+          <h2>Frontend:</h2>
+          <p>React, Redux, HTML5, CSS3</p>
+        </div>
+
+        <div className="tech-card">
+          <div className="icon-container">
+            <FaNode className="tech-icon" />
+          </div>
+          <h2>BackEnd:</h2>
+          <p>Node.js, Express.js, MongoDB</p>
+        </div>
+
+        <div className="tech-card">
+          <div className="icon-container">
+            <FaDatabase className="tech-icon" />
+          </div>
+          <h2>Database:</h2>
+          <p>MongoDB, Mongoose</p>
+        </div>
+
+        <div className="tech-card">
+          <div className="icon-container">
+            <FaGithub className="tech-icon" />
+          </div>
+          <h2>Version Control:</h2>
+          <p>Git, GitHub</p>
+        </div>
+
+        <div className="tech-card">
+          <div className="icon-container">
+            <FaRocket className="tech-icon" />
+          </div>
+          <h2>Deployment & Tools:</h2>
+          <p>Heroku, Netlify, Vercel, VS Code, Figma, Firebase, Chrome DevTools</p>
+        </div>
+
+        <div className="tech-card">
+          <div className="icon-container">
+            <FaLaptopCode className="tech-icon" />
+          </div>
+          <h2>Programming Language:</h2>
+          <p>C++, JavaScript</p>
+        </div>
       </div>
-
-
     </div>
-  )
+  );
 }
 
-export default Techknowledgy
+export default Techknowledgy;

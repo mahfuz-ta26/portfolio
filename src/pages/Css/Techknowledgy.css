@@ -1,49 +1,94 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.tech-holder {
+    padding: 2rem;
 }
 
-.tech-holder{
-    padding-left: 3rem;
-    padding-top: 5rem;
+
+.infoTech h1{
+  margin-top: 0rem;
+  font-size: 25px;
 }
 
-.hori1{
-    width: 60%;
+.infoTech .hori1{
+  width: 50%;
+  height: 1rem;
+  background-color:white;
+  border-radius: 1rem;
+  margin-top: 0rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.tech-card {
+  background-color: rgb(12, 167, 167);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.4rem;
+  text-align: left;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.tech-icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tech-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .infoTech h1{
+    margin-top: 0rem;
+    font-size: 25px;
+  }
+  
+  .infoTech .hori1{
+    width: 80%;
     height: 1rem;
     background-color:white;
     border-radius: 1rem;
-}
-
-.data-holder{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    margin-top: 0rem;
+  }  
 
 }
-
-.data-holder img{
-    width: 8rem;
-    height: 8rem;
-    margin: 1rem .3rem;
-    border: teal solid .2rem;
-    border-radius: 50%;
-    transition: .1s ease-in ;
-}
-
-.data-holder img:hover{
-    margin: .4rem .1rem;
-
-}
-
-@media screen and (max-width:420px) {
-    .tech-holder{
-        padding-left: 1rem;
-        padding-top: 2rem;
-    }
-
-    .data-holder img{
-        width: 5rem;
-        height: 5rem;
-    }
-}
+  

@@ -8,6 +8,7 @@ function ContactForm() {
     subject: '',
     message: '',
   });
+
   const [formStatus, setFormStatus] = useState({
     submitted: false,
     error: null,
@@ -24,7 +25,6 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData)
-    // Implement the email sending logic here using a library or API
 
     fetch('http://localhost:3001/send-email', {
       method: 'POST',
@@ -53,13 +53,13 @@ function ContactForm() {
   };
   // console.log(formStatus)
   return (
-    <div >
-      <div className='info pro'>
-            <h1>Contact...</h1>
-            <div className="hori"></div>
+    <div className='contact-holder'>
+      <div className='infocont'>
+            <h1>Contact Me...</h1>
+            {/* <div className="hori"></div> */}
       </div>
       
-    <div className="feedback-form">
+    <div className="contact-form">
       <form onSubmit={handleSubmit}>
         <div>
           <input

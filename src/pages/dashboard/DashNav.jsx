@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../Css/DashNav.css';
-import { FaLaptopHouse , FaMobileAlt , FaBookOpen , FaEdit , FaEnvelope } from "react-icons/fa";
+import { FaMobileAlt , FaBookOpen , FaEdit , FaEnvelope } from "react-icons/fa";
+import { AiTwotoneSafetyCertificate } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { useState } from 'react';
 
@@ -37,9 +38,9 @@ const DashNav = ({ isOpen , setIsOpen }) => {
                         to="/techknowledgy"><h2><FaBookOpen className='iconing'/><span className='n'>Expertise</span></h2>
                     </Link>
 
-                    <Link className='link'
-                        to="/techknowledgy"><h2><FaBookOpen className='iconing'/><span className='n'>Experience</span></h2>
-                    </Link>
+                    {/* <Link className='link'
+                        to="/experience"><h2><AiTwotoneSafetyCertificate style={{fontSize:"35px"}} className='iconing'/><span className='n'>Experience</span></h2>
+                    </Link> */}
                     
                     {/* <Link className='link'
                         to="/admin"><h2><FaBookOpen className='iconing'/><span className='n'>Admin Access</span></h2>
@@ -57,8 +58,9 @@ const DashNav = ({ isOpen , setIsOpen }) => {
                     <div className='link1'>
                         <h5 className='x' onClick={()=>setIsOpen(!isOpen)}>X</h5>
                         <h2>Check resume:</h2>
-                        <a href=""><FaEnvelope className='ab'/>Click</a>
+                        <a href="https://drive.google.com/file/d/1_kqJkGS-JZ5SuC4csEI0mYaIDPxkSf0C/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FaEnvelope className='ab'/>Click</a>
                     </div>
+
                 </div>
 
             </div>
